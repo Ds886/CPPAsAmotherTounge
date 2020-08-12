@@ -1,0 +1,52 @@
+#include <iostream.h>
+//#include "rect.h"
+class rect{
+public:
+ int a,b;
+ void show();
+ int area();
+ int perimeter();};
+int rect::area()
+ {
+ int c;
+ c=a*b;
+ return (c);
+ }
+int rect::perimeter()
+  {
+  int d;
+  d=(a+b) * 2;
+  return (d);
+  }
+void rect::show()
+  {
+  int i,j;
+  for(i=0;i<a;i++)
+    {
+    cout<<'\n';
+    for(j=0;j<b;j++)
+    cout<<'*';
+    }
+    cout<<'\n';
+  }
+main()
+{
+int z,s;
+rect r1,r2;
+r1.a=5;
+r1.b=7;
+z=r1.perimeter();
+s=r1.area();
+cout<<"r1: a="<<r1.a<<" b="<<r1.b<<'\n';
+cout<<"r1: perimeter="<<z<<'\n';
+cout<<"r1: area="<<s<<'\n';
+r1.show();
+r2.a=8;
+r2.b=5;
+cout<<"r2: a="<<r2.a<<" b="<<r2.b<<'\n';
+cout<<"r2: perimeter="<<r2.perimeter()<<'\n';
+cout<<"r2: area="<<r2.area()<<'\n';
+r2.show();
+return 0;
+}
+

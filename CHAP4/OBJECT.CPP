@@ -1,0 +1,24 @@
+#include <iostream.h>
+class point{
+private: int a,b;
+public:
+   void set_a(int x){if (x>0) a=x;};
+//int x,y;
+    void set_b(int y){if(y<80) b=y;};
+point(int,int){int x=0;int y=0;};
+point(){int x=0;};
+void show(){cout<<"a="<<a<<"  b="<<b<<'\n';}
+};
+
+main()
+{
+point p1,p2;
+p1.set_a(3); p1.set_b(4);
+p1.show();
+p2.set_a(5); p2.set_b(6);
+p2.show();
+return 0;
+}
+
+
+
